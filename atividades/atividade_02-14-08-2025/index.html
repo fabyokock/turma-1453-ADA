@@ -1,0 +1,408 @@
+<!-- Atividade de fixação
+Fazer um cardápio/catálogo digital;
+Todo produto deste cardápio/catálogo deve possuir uma imagem, um nome e uma descrição;
+É necessário possuir navegação entre as páginas;
+Deve existir uma tabela de preços (ou com qualquer outra função) na página;
+Deve possuir um formulário para cadastro; -->
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FK MUSIC</title>
+
+    <style>
+      table {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <!-- CABEÇALHO - Principais ofertas do dia -->
+
+  <body>
+    <header id="topo">
+      <nav>
+        <figure>
+          <img src="logo_fk-music.png" alt="FK MUSIC" width="150" />
+        </figure>
+
+        <ul>
+          <li>Principais ofertas do dia</li>
+
+          <li>Cadastro</li>
+
+          <li>Todos os itens da loja</li>
+        </ul>
+      </nav>
+
+      <h1>FK MUSIC</h1>
+
+      <h2>A sua loja de produtos musicais</h2>
+    </header>
+
+    <hr />
+
+    <!-- Corpo - Principais ofertas do dia -->
+
+    <main>
+      <h2>PRINCIPAIS OFERTAS DO DIA</h2>
+
+      <br />
+
+      <div id="001">
+        <h3>YAMAHA PSR 550</h3>
+
+        <figure>
+          <img src="#" alt="YAMAHA PSR 550" />
+
+          <!-- <figcaption>Breve texto</figcaption> -->
+        </figure>
+
+        <p>Preço especial: R$ 7.000,00</p>
+
+        <p>com 10% de desconto no PIX: R$ 6.300,00</p>
+
+        <p>Frete grátis!</p>
+
+        <button><a href="#">Quero comprar o meu agora</a></button>
+
+        <h4>Descrição do produto</h4>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
+          officia laborum nihil voluptatum voluptates deserunt commodi eligendi
+          odio rem, placeat aliquid incidunt eaque cumque assumenda, minima
+          possimus architecto voluptate animi.
+        </p>
+
+        <h4>Ficha técnica</h4>
+
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <div id="002">
+        <h3>YAMAHA CLAVINOVA 640</h3>
+
+        <figure>
+          <img src="#" alt="YAMAHA CLAVINOVA 640" />
+
+          <!-- <figcaption>Breve texto</figcaption> -->
+        </figure>
+
+        <p>Preço especial: R$ 27.000,00</p>
+
+        <p>com 10% de desconto no PIX: R$ 24.300,00</p>
+
+        <p>Frete grátis!</p>
+
+        <button><a href="#">Quero comprar o meu agora</a></button>
+
+        <h4>Descrição do produto</h4>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
+          officia laborum nihil voluptatum voluptates deserunt commodi eligendi
+          odio rem, placeat aliquid incidunt eaque cumque assumenda, minima
+          possimus architecto voluptate animi.
+        </p>
+
+        <h4>Ficha técnica</h4>
+
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <footer>
+        <p>
+          &copy; 2025 Seu Nome. Todos os direitos reservados. Resumo feito com
+          dedicação para você!
+        </p>
+
+        <p>
+          Aprender HTML é o primeiro passo para o mundo do desenvolvimento web!
+        </p>
+      </footer>
+
+      <hr />
+
+      <hr />
+      <br /><br /><br />
+
+      <!-- ****************************************************************************************************************************************************** -->
+
+      <!-- PÁGINA "TODOS OS ITENS DA LOJA" -->
+
+      <header>
+        <nav>
+          <figure>
+            <img src="logo_fk-music.png" alt="FK MUSIC" width="150" />
+          </figure>
+
+          <ul>
+            <li>Principais ofertas do dia</li>
+
+            <li>Cadastro</li>
+
+            <li>Todos os itens da loja</li>
+          </ul>
+        </nav>
+
+        <h1>FK MUSIC</h1>
+
+        <h2>A sua loja de produtos musicais</h2>
+      </header>
+
+      <hr />
+
+      <h2>CATÁLOGO DE PRODUTOS</h2>
+
+      <!-- Marca / Produto / Modelo / Preço -->
+
+      <!--                            Especial / PIX -->
+
+      <!-- Yamaha / Teclado / PSR 550 / 7.000,00 / 6.300,00 -->
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th rowspan="2">Marca</th>
+
+            <th rowspan="2">Produto</th>
+
+            <th rowspan="2">Modelo</th>
+
+            <th colspan="2">Preço</th>
+          </tr>
+
+          <tr>
+            <th>Especial</th>
+
+            <th>PIX</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td rowspan="3">&nbsp;YAMAHA&nbsp;</td>
+
+            <td>Teclado</td>
+
+            <td>PSR 550</td>
+
+            <td>R$ 7.000,00</td>
+
+            <td>R$ 6.300,00</td>
+          </tr>
+
+          <tr>
+            <td>Teclado</td>
+
+            <td>PSR 250</td>
+
+            <td>R$ 1.000,00</td>
+
+            <td>R$ 900,00</td>
+          </tr>
+
+          <tr>
+            <td>Teclado</td>
+
+            <td>CLAVINOVA 240</td>
+
+            <td>R$ 27.000,00</td>
+
+            <td>R$ 24.300,00</td>
+          </tr>
+
+          <tr>
+            <td rowspan="3">ROLAND</td>
+
+            <td>Teclado</td>
+
+            <td>PSR 550</td>
+
+            <td>R$ 7.000,00</td>
+
+            <td>R$ 6.300,00</td>
+          </tr>
+
+          <tr>
+            <td>Teclado</td>
+
+            <td>PSR 550</td>
+
+            <td>R$ 7.000,00</td>
+
+            <td>R$ 6.300,00</td>
+          </tr>
+
+          <tr>
+            <td>Teclado</td>
+
+            <td>PSR 550</td>
+
+            <td>R$ 7.000,00</td>
+
+            <td>R$ 6.300,00</td>
+          </tr>
+
+          <tr>
+            <td rowspan="2">NORD</td>
+
+            <td>Teclado</td>
+
+            <td>PSR 550</td>
+
+            <td>R$ 7.000,00</td>
+
+            <td>R$ 6.300,00</td>
+          </tr>
+
+          <tr>
+            <td>Teclado</td>
+
+            <td>PSR 550</td>
+
+            <td>R$ 7.000,00</td>
+
+            <td>R$ 6.300,00</td>
+          </tr>
+
+          <tr>
+            <td>KORG</td>
+
+            <td>Teclado</td>
+
+            <td>PSR 550</td>
+
+            <td>R$ 7.000,00</td>
+
+            <td>R$ 6.300,00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br />
+
+      <button><a href="#topo">Ir para a página de OFERTAS</a></button>
+
+      <hr />
+      <hr />
+
+      <br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br />
+
+      <table border="2">
+        <thead>
+          <tr>
+            <th rowspan="2"></th>
+
+            <th>X</th>
+
+            <th>X</th>
+
+            <th>X</th>
+
+            <th>X</th>
+
+            <th>X</th>
+          </tr>
+
+          <tr>
+            <th colspan="2">x</th>
+
+            <th colspan="2">x</th>
+
+            <th>x</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><b>A</b></td>
+
+            <td>&nbsp;Y&nbsp;</td>
+
+            <td>Y</td>
+
+            <td>Y</td>
+
+            <td>Y</td>
+
+            <td>Y</td>
+          </tr>
+
+          <tr>
+            <td><b>A</b></td>
+
+            <td>&nbsp;Z&nbsp;</td>
+
+            <td>Z</td>
+
+            <td>Z</td>
+
+            <td>Z</td>
+
+            <td>Z</td>
+          </tr>
+
+          <tr>
+            <td><b>A</b></td>
+
+            <td>W</td>
+
+            <td>W</td>
+
+            <td>W</td>
+
+            <td>W</td>
+
+            <td>W</td>
+          </tr>
+
+          <tr>
+            <td><b>A</b></td>
+
+            <td>H</td>
+
+            <td>H</td>
+
+            <td>H</td>
+
+            <td>H</td>
+
+            <td>H</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <a href="#001">Voltar</a>
+
+    <a href="fk-resumo-gemini.html">Teste</a>
+  </body>
+</html>
