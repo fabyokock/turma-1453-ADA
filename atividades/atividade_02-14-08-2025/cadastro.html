@@ -20,6 +20,7 @@
       }
     </style>
   </head>
+
   <body>
     <header id="topo">
       <nav>
@@ -46,6 +47,135 @@
     <h2>Realize agora o seu cadastro e aproveite as melhores ofertas do dia</h2>
 
     <hr />
+
+    <main>
+      <br />
+
+      <form action="" method="get">
+        <div>
+          <label for="texto">Escreva qualquer coisa</label>
+          <input
+            type="text"
+            id="texto"
+            placeholder="Escreva qualquer coisa..."
+          />
+        </div>
+
+        <div>
+          <label for="texto2">Digite seu nome:</label>
+          <input type="text" id="texto2" value="Oswaldo" />
+        </div>
+
+        <div>
+          <label for="texto3">Nome:</label>
+          <input type="text" id="texto3" name="nome" />
+        </div>
+
+        <div>
+          <label for="senha">Digite sua senha:</label>
+          <input
+            type="password"
+            id="senha"
+            name="senha"
+            placeholder="Sua senha aqui"
+          />
+        </div>
+
+        <div>
+          <label for="email">Digite seu email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div>
+          <label for="data">Data de Nascimento</label>
+          <input type="date" id="data" name="data" />
+        </div>
+
+        <div>
+          <label for="hora">Horário:</label>
+          <input type="time" id="hora" name="hora" />
+        </div>
+
+        <div>
+          <label for="numero">Digite um número:</label>
+          <input type="number" id="numero" name="numero" />
+        </div>
+
+        <div>
+          <label for="arquivo">Escolha um arquivo</label>
+          <input type="file" id="arquivo" name="arquivo" />
+        </div>
+
+        <div>
+          <label for="site">Site:</label>
+          <input type="url" id="site" name="site" />
+        </div>
+
+        <div>
+          <label for="cor">Escolha uma cor:</label>
+          <input type="color" id="cor" name="cor" />
+        </div>
+
+        <div>
+          <label for="barra">Defina o nível:</label>
+          <input
+            type="range"
+            id="barra"
+            name="barra"
+            value="50"
+            max="100"
+            min="0"
+          />
+        </div>
+
+        <div>
+          <label for="varios">Escolha quantos quiser:</label>
+          <input type="checkbox" id="varios" name="varios" checked />
+        </div>
+
+        <div>
+          <label for="somente">Escolha apenas um:</label>
+          <input type="radio" id="somente" name="somente" checked />
+        </div>
+
+        <div>
+          <label for="limpar">Se quiser apagar tudo, clique:</label>
+          <input
+            type="reset"
+            id="limpar"
+            name="limpar"
+            value="Apagar os dados"
+          />
+        </div>
+
+        <div>
+          <textarea
+            name="bio"
+            id="bio"
+            placeholder="Digite algo sobre você"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <div>
+          <select name="selecione" id="selecione">
+            <option value="" disabled selected>Selecione uma das opções</option>
+            <option value="Receita">Receita</option>
+            <option value="Despésa">Despesa</option>
+            <option value="Transferência">Transferência</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="enviar"> Para enviar os dados, clique:</label>
+          <input type="submit" id="enviar" name="enviar" value="Enviar dados" />
+        </div>
+      </form>
+    </main>
+
+    <hr />
+
     <footer>
       <p>
         &copy; 2025 FK MUSIC. Todos os direitos reservados. Loja especializada
