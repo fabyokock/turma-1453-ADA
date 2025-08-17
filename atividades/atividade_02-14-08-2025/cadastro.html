@@ -1,3 +1,69 @@
+<!-- 1. Dados Pessoais
+
+Nome completo: __________________________
+
+CPF: __________________________
+
+Data de nascimento: ____ / ____ / ______
+
+Sexo (opcional): ☐ Masculino ☐ Feminino ☐ Prefiro não informar
+
+
+2. Contato
+
+E-mail: __________________________
+
+Telefone celular: (__) -_
+
+Telefone fixo (opcional): (__) -_
+
+
+3. Endereço de Entrega
+
+CEP: __________
+
+Endereço (rua/avenida): __________________________
+
+Número: _______
+
+Complemento (apto, bloco, casa, etc.): __________________________
+
+Bairro: __________________________
+
+Cidade: __________________________
+
+Estado: [UF]
+
+Ponto de referência (opcional): __________________________
+
+
+4. Dados de Pagamento
+
+Forma de pagamento:
+☐ Cartão de crédito
+☐ Boleto bancário
+☐ PIX
+☐ Outros: ____________________
+
+Se cartão de crédito:
+
+Nome impresso no cartão: __________________________
+
+Número do cartão: ____ ____ ____ ____
+
+Validade (MM/AA): ____ / ____
+
+Código de segurança (CVV): ___
+
+CPF do titular (se diferente do comprador): __________________________
+
+
+5. Dados de Acesso (se for criar conta no site)
+
+Criar senha: __________________________
+
+Confirmar senha: __________________________ -->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -50,129 +116,154 @@
 
     <main>
       <br />
+      <h3>📝 Formulário de Cadastro – Pessoa Física</h3>
 
       <form action="" method="get">
+        <h4>1. Dados Pessoais</h4>
+
         <div>
-          <label for="texto">Escreva qualquer coisa</label>
+          <label for="nomeCompleto">Nome completo:</label>
+          <br />
           <input
             type="text"
-            id="texto"
-            placeholder="Escreva qualquer coisa..."
+            id="nomeCompleto"
+            placeholder="Seu nome completo aqui..."
           />
         </div>
-
+        <br />
         <div>
-          <label for="texto2">Digite seu nome:</label>
-          <input type="text" id="texto2" value="Oswaldo" />
+          <label for="cpf">CPF:</label>
+          <br />
+          <input type="number" id="cpf" placeholder="000.000.000-00" />
         </div>
-
+        <br />
         <div>
-          <label for="texto3">Nome:</label>
-          <input type="text" id="texto3" name="nome" />
+          <label for="dataNascimento">Data de nascimento:</label>
+          <br />
+          <input type="date" id="dataNascimento" />
         </div>
-
+        <br />
         <div>
-          <label for="senha">Digite sua senha:</label>
+          <label>Gênero (opcional):</label><br />
+
+          <input type="radio" id="masculino" name="genero" value="M" />
+          <label for="masculino">Masculino</label>
+
+          <input type="radio" id="feminino" name="genero" value="F" />
+          <label for="feminino">Feminino</label>
+
           <input
-            type="password"
-            id="senha"
-            name="senha"
-            placeholder="Sua senha aqui"
+            type="radio"
+            id="naoInformado"
+            name="genero"
+            value="Não informado"
           />
+          <label for="naoInformado">Prefiro não informar</label>
         </div>
+        <br />
+        <h4>2.Contato</h4>
 
         <div>
-          <label for="email">Digite seu email:</label>
-          <input type="email" id="email" name="email" />
+          <label for="email">E-mail:</label>
+          <br />
+          <input type="email" id="email" placeholder="email@email.com.br" />
         </div>
+        <br />
 
         <div>
-          <label for="data">Data de Nascimento</label>
-          <input type="date" id="data" name="data" />
+          <label for="celular">Telefone celular:</label>
+          <br />
+          <input type="tel" id="celular" placeholder="00 00000-0000" />
         </div>
+        <br />
 
         <div>
-          <label for="hora">Horário:</label>
-          <input type="time" id="hora" name="hora" />
+          <label for="telefoneFixo">Telefone fixo (opcional):</label>
+          <br />
+          <input type="tel" id="telefoneFixo" placeholder="00 0000-0000" />
         </div>
+        <br />
+
+        <h4>3. Endereço de Entrega</h4>
+        <br />
+        <div>
+          <label for="endereco">Rua / Avenida (com nº):</label>
+          <br />
+          <input type="text" id="endereco" />
+        </div>
+        <br />
 
         <div>
-          <label for="numero">Digite um número:</label>
-          <input type="number" id="numero" name="numero" />
+          <label for="bairro">Bairro:</label>
+          <br />
+          <input type="text" id="bairro" />
         </div>
+        <br />
 
         <div>
-          <label for="arquivo">Escolha um arquivo</label>
-          <input type="file" id="arquivo" name="arquivo" />
+          <label for="cidade">Cidade:</label>
+          <br />
+          <input type="text" id="cidade" />
         </div>
+        <br />
 
         <div>
-          <label for="site">Site:</label>
-          <input type="url" id="site" name="site" />
+          <label for="cep">CEP:</label>
+          <br />
+          <input type="number" id="cep" placeholder="00.000.000" />
         </div>
+        <br />
 
         <div>
-          <label for="cor">Escolha uma cor:</label>
-          <input type="color" id="cor" name="cor" />
-        </div>
-
-        <div>
-          <label for="barra">Defina o nível:</label>
-          <input
-            type="range"
-            id="barra"
-            name="barra"
-            value="50"
-            max="100"
-            min="0"
-          />
-        </div>
-
-        <div>
-          <label for="varios">Escolha quantos quiser:</label>
-          <input type="checkbox" id="varios" name="varios" checked />
-        </div>
-
-        <div>
-          <label for="somente">Escolha apenas um:</label>
-          <input type="radio" id="somente" name="somente" checked />
-        </div>
-
-        <div>
-          <label for="limpar">Se quiser apagar tudo, clique:</label>
-          <input
-            type="reset"
-            id="limpar"
-            name="limpar"
-            value="Apagar os dados"
-          />
-        </div>
-
-        <div>
+          <label for="referencia">Ponto de referência:</label>
+          <br />
           <textarea
-            name="bio"
-            id="bio"
-            placeholder="Digite algo sobre você"
+            id="referencia"
+            placeholder="Facilite a entrega informando um ponto de referência."
             cols="30"
             rows="10"
           ></textarea>
         </div>
 
-        <div>
-          <select name="selecione" id="selecione">
-            <option value="" disabled selected>Selecione uma das opções</option>
-            <option value="Receita">Receita</option>
-            <option value="Despésa">Despesa</option>
-            <option value="Transferência">Transferência</option>
-          </select>
-        </div>
+        <br />
+
+        <h4>4. Forma de Pagamento</h4>
 
         <div>
-          <label for="enviar"> Para enviar os dados, clique:</label>
+          <label for="pagamento">Opções de pagamento:</label>
+          <br /><br />
+
+          <input type="radio" id="credito" name="pagamento" value="C" />
+          <label for="credito">Cartão de crédito</label>
+          <br />
+
+          <input type="radio" id="boleto" name="pagamento" value="B" />
+          <label for="boleto">Boleto bancário</label>
+          <br />
+
+          <input type="radio" id="pix" name="pagamento" value="P" />
+          <label for="pix">PIX</label>
+        </div>
+
+        <br />
+
+        <h4>5. Confirmação</h4>
+
+        <div>
+          <label for="senha">Digite sua senha para confirmar a compra:</label>
+          <br /><br />
+          <input type="password" id="senha" />
+        </div>
+        <br />
+
+        <h4>6. Finalizar</h4>
+
+        <div>
           <input type="submit" id="enviar" name="enviar" value="Enviar dados" />
         </div>
       </form>
     </main>
+    <br /><br />
 
     <hr />
 
@@ -188,8 +279,5 @@
     </footer>
 
     <hr />
-
-    <hr />
-    <br /><br /><br />
   </body>
 </html>
