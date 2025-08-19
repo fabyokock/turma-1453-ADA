@@ -1,0 +1,35 @@
+h1,
+h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  font-family: "monteserrat", sans-serif;
+}
+
+footer {
+  text-align: center;
+}
+
+.botaoDeCompra button,
+.botaoDeCompra a {
+  background-color: #008ff7;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.freteGratis {
+  font-weight: 600;
+  color: red;
+}
+
+.botaoNav,
+.botaoNav a {
+  background-color: rgb(1, 1, 50);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
