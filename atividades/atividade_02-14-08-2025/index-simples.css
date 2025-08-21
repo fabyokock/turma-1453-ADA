@@ -1,0 +1,125 @@
+/* RESET E CONFIGURAÇÕES GERAIS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* border: solid;
+  border-color: brown; */
+  font-family: "montserrat", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* CABEÇALHO E NAVEGAÇÃO */
+header {
+  /* border: solid;
+  border-color: rgb(28, 184, 4); */
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+}
+
+header img {
+  /* border: solid;
+  border-color: rgb(233, 158, 8); */
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* NAVEGAÇÃO */
+nav {
+  /* border: solid;
+  border-color: rgb(233, 218, 8); */
+  background-color: #444;
+  padding: 10px;
+}
+
+nav ul {
+  /* border: solid;
+  border-color: rgb(8, 169, 233); */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  /* border: solid;
+  border-color: rgb(233, 8, 173); */
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  /* border: solid;
+  border-color: rgb(233, 233, 8); */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* SEÇÂO DE PRODUTOS */
+main {
+  /* border: solid;
+  border-color: rgb(217, 224, 7); */
+  padding: 20px;
+  background-color: #fff;
+}
+
+section {
+  border: 1px solid #ccc;
+  margin-bottom: 40px;
+  padding: 15px;
+  background-color: #fafafa;
+}
+
+section h3 {
+  color: #006699;
+}
+
+section img {
+  /* border: solid;
+  border-color: rgb(217, 224, 7); */
+  display: block;
+  margin: 10px auto;
+}
+
+/* BOTÕES */
+.botaoDeCompra button,
+.botaoNav {
+  /* border: solid;
+  border-color: rgb(246, 4, 4); */
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #006699;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.botaoDeCompra button a,
+.botaoNav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* FRETE GRÁTIS */
+.freteGratis {
+  color: green;
+  font-weight: bold;
+}
+
+/* RODAPÉ */
+footer {
+  /* border: solid;
+  border-color: rgb(246, 4, 4); */
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+}
