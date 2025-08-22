@@ -1,0 +1,473 @@
+/*
+  Vamos começar com algumas configurações básicas para o corpo da página (body).
+  Isso afeta o documento inteiro.
+*/
+body {
+  /*
+    'font-family' define a fonte do texto.
+    'sans-serif' é uma fonte genérica e sem serifa (como Arial ou Helvetica),
+    garantindo que o texto seja fácil de ler em qualquer navegador.
+  */
+  font-family: sans-serif;
+
+  /*
+    'line-height' ajusta o espaçamento entre as linhas do texto.
+    Um valor de 1.6 é bom para melhorar a legibilidade.
+  */
+  line-height: 1.6;
+
+  /*
+    'background-color' define a cor de fundo da página.
+    Estamos usando um cinza claro para ser neutro.
+  */
+  background-color: #f4f4f4;
+
+  /*
+    'color' define a cor do texto principal.
+    Aqui, um cinza escuro para contraste.
+  */
+  color: #333;
+
+  /*
+    'margin: 0' remove as margens padrão que os navegadores
+    aplicam ao redor do corpo da página.
+  */
+  margin: 0;
+}
+
+/*
+  Vamos estilizar o cabeçalho (header).
+  Ele precisa de um fundo, cor de texto, e preenchimento (padding).
+*/
+header {
+  /*
+    'background-color' para a cor de fundo do cabeçalho.
+  */
+  background-color: #333;
+
+  /*
+    'color' para a cor do texto dentro do cabeçalho.
+  */
+  color: #fff;
+
+  /*
+    'padding' adiciona espaço interno, separando o conteúdo do cabeçalho
+    das bordas. Os valores são: em cima/baixo e esquerda/direita.
+  */
+  padding: 1rem 0;
+
+  /*
+    Aqui, o Flexbox entra em ação! 'display: flex' transforma o 'header'
+    em um container flex, permitindo que seus elementos filhos
+    sejam organizados de forma flexível.
+  */
+  display: flex;
+
+  /*
+    'justify-content' alinha os itens (filhos) horizontalmente.
+    'center' centraliza o conteúdo do cabeçalho.
+  */
+  justify-content: center;
+
+  /*
+    'align-items' alinha os itens verticalmente.
+    'center' centraliza o conteúdo na vertical.
+  */
+  align-items: center;
+
+  /*
+    'flex-wrap' permite que os itens quebrem para a próxima linha
+    se não houver espaço suficiente.
+  */
+  flex-wrap: wrap;
+
+  /*
+    'gap' cria um espaço entre os itens flexíveis, horizontal e verticalmente.
+  */
+  gap: 1rem;
+
+  /*
+    'text-align' alinha o texto internamente.
+  */
+  text-align: center;
+}
+
+/*
+  Ajustando os elementos dentro do cabeçalho.
+*/
+header h1,
+header h2 {
+  /* 'margin: 0' remove a margem padrão dos títulos para evitar espaços indesejados. */
+  margin: 0;
+}
+
+/*
+  Vamos estilizar o menu de navegação (nav).
+*/
+nav {
+  /*
+    Mais Flexbox! 'display: flex' para o menu.
+  */
+  display: flex;
+
+  /*
+    'justify-content' alinha os itens no menu.
+    'center' para centralizar os links.
+  */
+  justify-content: center;
+
+  /*
+    'background-color' para a cor de fundo do menu de navegação.
+  */
+  background-color: #555;
+
+  /*
+    'padding' para dar espaço interno.
+  */
+  padding: 0.5rem 0;
+}
+
+/*
+  Agora, vamos estilizar a lista de links (ul) dentro do menu.
+*/
+nav ul {
+  /*
+    'display: flex' aqui permite que os 'li' (itens da lista)
+    fiquem um ao lado do outro.
+  */
+  display: flex;
+
+  /*
+    'list-style-type: none' remove os marcadores de lista (os pontinhos).
+  */
+  list-style-type: none;
+
+  /*
+    'margin: 0' e 'padding: 0' removem os espaços padrão da lista.
+  */
+  margin: 0;
+  padding: 0;
+
+  /*
+    'gap' para criar espaço entre os itens.
+  */
+  gap: 1.5rem;
+}
+
+/*
+  Estilizando os links (a) dentro dos itens de lista (li) do menu.
+*/
+nav ul li a {
+  /*
+    'color' para a cor do texto do link.
+  */
+  color: #fff;
+
+  /*
+    'text-decoration: none' remove a linha de sublinhado padrão dos links.
+  */
+  text-decoration: none;
+
+  /*
+    'font-weight: bold' deixa o texto em negrito.
+  */
+  font-weight: bold;
+}
+
+/*
+  Efeito de 'hover' para os links (quando o mouse passa por cima).
+*/
+nav ul li a:hover {
+  /*
+    'text-decoration: underline' adiciona o sublinhado novamente para
+    indicar que o link pode ser clicado.
+  */
+  text-decoration: underline;
+}
+
+/*
+  Vamos estilizar a seção principal de conteúdo (main).
+*/
+main {
+  /*
+    'max-width' limita a largura máxima da área de conteúdo para
+    melhor leitura em telas grandes.
+  */
+  max-width: 900px;
+
+  /*
+    'margin: 0 auto' centraliza o conteúdo horizontalmente.
+  */
+  margin: 0 auto;
+
+  /*
+    'padding' adiciona espaço nas laterais.
+  */
+  padding: 1rem;
+}
+
+/*
+  Estilizando as seções de produtos (section).
+  Flexbox de novo! 'display: flex' permite organizar os itens
+  dentro de cada seção.
+*/
+main section {
+  /*
+    'display: flex' para organizar os elementos da seção.
+  */
+  display: flex;
+
+  /*
+    'flex-direction: column' organiza os itens um abaixo do outro.
+    O Flexbox também funciona para colunas, não apenas linhas.
+  */
+  flex-direction: column;
+
+  /*
+    'align-items: center' centraliza os itens na horizontal.
+    Isso é ótimo para alinhar a imagem, títulos e parágrafos.
+  */
+  align-items: center;
+
+  /*
+    'text-align: center' alinha o texto dentro dos parágrafos ao centro.
+  */
+  text-align: center;
+
+  /*
+    'padding' adiciona espaço interno para cada seção de produto.
+  */
+  padding: 2rem 1rem;
+
+  /*
+    'background-color' para um fundo branco, destacando a seção.
+  */
+  background-color: #fff;
+
+  /*
+    'border-radius' arredonda os cantos da seção.
+  */
+  border-radius: 8px;
+
+  /*
+    'box-shadow' adiciona uma sombra sutil para dar a sensação de profundidade.
+  */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /*
+    'margin-bottom' adiciona espaço entre as seções.
+  */
+  margin-bottom: 2rem;
+}
+
+/*
+  Estilizando as imagens dentro das seções.
+*/
+main section figure img {
+  /*
+    'max-width: 100%' garante que a imagem nunca ultrapasse
+    a largura do seu container.
+  */
+  max-width: 100%;
+
+  /*
+    'height: auto' mantém a proporção original da imagem.
+  */
+  height: auto;
+
+  /*
+    'border-radius' arredonda os cantos da imagem.
+  */
+  border-radius: 8px;
+}
+
+/*
+  Estilizando o parágrafo de frete grátis.
+*/
+.freteGratis {
+  /*
+    'font-weight: bold' deixa o texto em negrito.
+  */
+  font-weight: bold;
+
+  /*
+    'color' para uma cor verde que indica algo bom.
+  */
+  color: green;
+}
+
+/*
+  Vamos estilizar o botão de compra.
+*/
+.botaoDeCompra button {
+  /*
+    'background-color' para a cor de fundo do botão.
+  */
+  background-color: #ff5722; /* Laranja */
+
+  /*
+    'color' para a cor do texto do botão.
+  */
+  color: #fff;
+
+  /*
+    'padding' para dar espaço interno ao botão.
+  */
+  padding: 10px 20px;
+
+  /*
+    'border: none' remove a borda padrão do botão.
+  */
+  border: none;
+
+  /*
+    'border-radius' arredonda os cantos.
+  */
+  border-radius: 5px;
+
+  /*
+    'cursor: pointer' muda o cursor para uma mãozinha quando
+    o mouse passa por cima, indicando que é clicável.
+  */
+  cursor: pointer;
+
+  /*
+    'transition' suaviza a mudança de cor quando o 'hover' acontece.
+  */
+  transition: background-color 0.3s ease;
+}
+
+/*
+  Efeito de 'hover' para o botão de compra.
+*/
+.botaoDeCompra button:hover {
+  /*
+    Muda a cor de fundo para um tom mais escuro quando o mouse está sobre ele.
+  */
+  background-color: #e64a19;
+}
+
+/*
+  Estilizando o link dentro do botão.
+*/
+.botaoDeCompra button a {
+  /*
+    'color' para a cor do texto do link.
+  */
+  color: #fff;
+
+  /*
+    'text-decoration: none' remove o sublinhado do link.
+  */
+  text-decoration: none;
+}
+
+/*
+  Estilizando a lista de ficha técnica.
+*/
+main section ul {
+  /*
+    'list-style-type: none' remove os marcadores de lista (os pontinhos).
+  */
+  list-style-type: none;
+
+  /*
+    'padding: 0' remove o preenchimento padrão da lista.
+  */
+  padding: 0;
+}
+
+/*
+  Estilizando os botões de navegação no final da página.
+*/
+.botaoNav {
+  /*
+    'background-color' para a cor de fundo.
+  */
+  background-color: #3f51b5; /* Azul */
+
+  /*
+    'color' para a cor do texto.
+  */
+  color: #fff;
+
+  /*
+    'padding' para o espaço interno.
+  */
+  padding: 10px 20px;
+
+  /*
+    'border: none' remove a borda.
+  */
+  border: none;
+
+  /*
+    'border-radius' arredonda os cantos.
+  */
+  border-radius: 5px;
+
+  /*
+    'cursor: pointer' para o cursor de mãozinha.
+  */
+  cursor: pointer;
+
+  /*
+    'transition' para suavizar a mudança.
+  */
+  transition: background-color 0.3s ease;
+
+  /*
+    'margin' para separar os botões.
+  */
+  margin: 0.5rem;
+}
+
+/*
+  Efeito de 'hover' para os botões de navegação.
+*/
+.botaoNav:hover {
+  /*
+    Muda a cor de fundo.
+  */
+  background-color: #303f9f;
+}
+
+/*
+  Estilizando os links dentro dos botões de navegação.
+*/
+.botaoNav a {
+  /*
+    'color' para a cor do texto.
+  */
+  color: #fff;
+
+  /*
+    'text-decoration: none' remove o sublinhado.
+  */
+  text-decoration: none;
+}
+
+/*
+  Finalmente, estilizando o rodapé (footer).
+*/
+footer {
+  /*
+    'background-color' para a cor de fundo.
+  */
+  background-color: #333;
+
+  /*
+    'color' para a cor do texto.
+  */
+  color: #fff;
+
+  /*
+    'text-align: center' centraliza o texto.
+  */
+  text-align: center;
+
+  /*
+    'padding' para o espaço interno.
+  */
+  padding: 1rem 0;
+}
