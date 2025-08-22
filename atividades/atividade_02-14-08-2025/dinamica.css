@@ -1,0 +1,55 @@
+.content {
+  padding-top: 240px;
+  padding-bottom: 440px;
+  margin-bottom: 100px;
+  background: url("assets/background.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-origin: border-box;
+}
+
+.content div {
+  background-color: #cecece;
+  width: 540px;
+}
+
+.content div span {
+  color: #d44d51;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  color: #cd313e;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+button {
+  width: 189.131px;
+  height: 36px;
+  flex-shrink: 0;
+  background-color: #cd313e;
+  color: #fff;
+}
+
+.lista {
+  display: flex;
+}
+
+.lista li {
+  padding: 5px;
+  position: relative;
+  list-style-type: none;
+}
