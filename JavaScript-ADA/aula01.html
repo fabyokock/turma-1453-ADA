@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Aula 01</title>
+  </head>
+  <body>
+    <script>
+      let nome = String(window.prompt("Digite o seu nome: "));
+      let nota1 = Number(
+        window.prompt(`Olá, ${nome}, digite sua primeira nota: `)
+      );
+      let peso1 = 1;
+      let nota2 = Number(window.prompt(`Agora digite a sua segunda nota: `));
+      let peso2 = 2;
+      let nota3 = Number(
+        window.prompt(`Por fim, digite a sua terceira nota: `)
+      );
+      let peso3 = 3;
+
+      let mediaFinal = Number(
+        (nota1 * peso1 + nota2 * peso2 + nota3 * peso3) /
+          (peso1 + peso2 + peso3)
+      );
+
+      window.alert(`${nome}, clique em "ok" para acessar o seu boletim final.`);
+
+      document.write(
+        `${nome}, a sua média final foi: ${mediaFinal.toFixed(2)}.`
+      );
+    </script>
+  </body>
+</html>
