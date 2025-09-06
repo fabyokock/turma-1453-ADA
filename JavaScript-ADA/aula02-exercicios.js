@@ -185,21 +185,34 @@ console.log("");
 
 // 4. Usando a função criarPessoa, crie o array pessoas com 2 objetos:
 
-function criarPessoa02(nome1, idade1, nome2, idade2) {
-  let pessoas = [
-    {
-      Nome: nome1,
-      Idade: idade1,
-    },
-    {
-      Nome: nome2,
-      Idade: idade2,
-    },
-  ];
-  return pessoas;
+function criaPessoa(nome, idade) {
+  return {
+    Nome: nome,
+    Idade: idade,
+  };
 }
 
-let registroCriado2 = criarPessoa02("Paulo", 65, "Barnabé", 57);
+let registroCriado2 = [
+  criaPessoa("Paulo", 65),
+  criaPessoa("Barnabé", 57),
+  criaPessoa("Tiago", 43),
+];
+
+// function criarPessoa02(nome1, idade1, nome2, idade2) {
+//   let pessoas = [
+//     {
+//       Nome: nome1,
+//       Idade: idade1,
+//     },
+//     {
+//       Nome: nome2,
+//       Idade: idade2,
+//     },
+//   ];
+//   return pessoas;
+// }
+
+// let registroCriado2 = criarPessoa02("Paulo", 65, "Barnabé", 57);
 console.log(`Aqui está o novo registro criado:`, registroCriado2);
 
 console.log("");
@@ -212,8 +225,13 @@ function idadeDaPrimeiraPessoa(array) {
   console.log(
     `A primeira pessoa da lista é ${pessoa}. A idade de ${pessoa} é ${idade} anos.`
   );
-  return idade;
+  return { pessoa, idade };
 }
-idadeDaPrimeiraPessoa(registroCriado2);
+let identificacao = idadeDaPrimeiraPessoa(registroCriado2);
+
+console.log("");
+
+console.log(`A primeira pessoa da lista é:`, identificacao.pessoa);
+console.log(`A idade dessa pessoa é:`, identificacao.idade, `anos.`);
 
 console.log("");
