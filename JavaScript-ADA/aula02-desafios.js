@@ -81,4 +81,9 @@ let adicionando = adicionarAluno(alunos, novoAluno);
 
 console.log(adicionando);
 
+let novoAluno2 = { Nome: "Pedro", Idade: 75 };
+let adicionado2 = adicionarAluno(alunos, novoAluno2);
+
+console.log(adicionado2);
+
 console.log("");
