@@ -71,3 +71,38 @@ console.log("-----------------------------------------------");
 console.log("                ### Exercício 3:               ");
 console.log("        A Classificação de Temperaturas        ");
 console.log("-----------------------------------------------");
+
+// Você está desenvolvendo um aplicativo de clima. Ele precisa categorizar a temperatura em três faixas: "Frio", "Agradável" e "Quente".
+
+// "Frio": Se a temperatura for menor que 10 graus Celsius.
+
+// "Agradável": Se a temperatura estiver entre 10 e 25 graus Celsius (incluindo 10 e 25).
+
+// "Quente": Se a temperatura for maior que 25 graus Celsius.
+
+// Crie uma variável temperatura com um valor.
+
+// Use a estrutura if/else if/else para verificar em qual faixa a temperatura se encaixa e, em seguida, exiba a categoria correspondente.
+
+function verificarTemperatura(temperatura) {
+  return temperatura;
+}
+
+let temperatura = verificarTemperatura(26);
+
+if (temperatura < 10) {
+  console.log(
+    `A temperatura está abaixo de ${temperatura}º, portanto, está FRIO.`
+  );
+} else if (temperatura >= 10 && temperatura <= 25) {
+  console.log(
+    `A temperatura está em ${temperatura}º, portanto, está AGRADÁVEL.`
+  );
+} else {
+  console.log(`A temperatura está em ${temperatura}º, portanto, está QUENTE.`);
+}
+
+console.log("-----------------------------------------------");
+console.log("                ### Exercício 4:               ");
+console.log("        O Login no Sistema de E-Commerce       ");
+console.log("-----------------------------------------------");
