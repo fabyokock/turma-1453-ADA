@@ -131,6 +131,3 @@ console.log(
   calcularMediaAluno(alunos, 2)
 );
 
-const arr = [10, 10, 11];
-console.log(arr.find((o) => o == 11)); // -> 11
-console.log(arr.find((o) => o == 12)); // -> undefined
