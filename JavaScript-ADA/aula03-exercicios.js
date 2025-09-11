@@ -82,3 +82,96 @@ function verificarParImpar(n1) {
 }
 
 console.log(verificarParImpar(17));
+
+console.log("-----------------------------------------------");
+console.log("                ### Exercício 3:               ");
+console.log("              Desconto em produto              ");
+console.log("-----------------------------------------------");
+
+// 4. Desconto em Produto
+// o  Receber o valor de um produto.
+// o  Se for maior que 100 reais, aplicar 10% de desconto.
+// o  Caso contrário, aplicar 5%.
+
+let valorFinal = (valorProduto) => {
+  if (valorProduto > 100) {
+    let precoFinal = valorProduto - valorProduto * 0.1;
+    console.log(
+      `Com o desconto de 10% aplicado, o valor final a ser pago é ${precoFinal} reais.`
+    );
+  } else {
+    let precoFinal = valorProduto - valorProduto * 0.05;
+    console.log(
+      `Com o desconto de 5% aplicado, o valor final a ser pago é ${precoFinal} reais.`
+    );
+  }
+};
+
+valorFinal(100);
+
+let valorFinal2 = (valorProduto) => {
+  let precoFinal;
+  if (valorProduto > 100) {
+    precoFinal = valorProduto - valorProduto * 0.1;
+  } else {
+    precoFinal = valorProduto - valorProduto * 0.05;
+  }
+  return `O valor final a ser pago é ${precoFinal} reais.`;
+};
+
+console.log(valorFinal2(100));
+
+console.log("-----------------------------------------------");
+console.log("                ### Exercício 5:               ");
+console.log("         Conversão de Nota em Conceito         ");
+console.log("                com switch/case                ");
+console.log("-----------------------------------------------");
+
+// 5. **Conversão de Nota em Conceito**
+//     - Receber uma nota (0 a 10).
+//     - Usar `switch` para transformar em conceito:
+//         - 9–10 → A
+//         - 7–8 → B
+//         - 5–6 → C
+//         - abaixo de 5 → D
+
+// const nota = 10;
+
+// switch (nota) {
+//   case nota > 9:
+//     console.log(`Aluno conceito A.`);
+//     break;
+//   case nota > 7:
+//     console.log(`Aluno conceito B.`);
+//     break;
+//   case nota > 5:
+//     console.log(`Aluno conceito C.`);
+//     break;
+//   default:
+//     console.log(`Aluno condeito D.`);
+// }
+
+const nota = 5;
+
+switch (nota) {
+  case 10:
+    console.log(`Aluno conceito A.`);
+    break;
+  case 9:
+    console.log(`Aluno conceito A.`);
+    break;
+  case 8:
+    console.log(`Aluno conceito B.`);
+    break;
+  case 7:
+    console.log(`Aluno conceito B.`);
+    break;
+  case 6:
+    console.log(`Aluno conceito C.`);
+    break;
+  case 5:
+    console.log(`Aluno conceito C.`);
+    break;
+  default:
+    console.log(`Aluno conceito D.`);
+}
