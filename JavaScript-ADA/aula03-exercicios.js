@@ -135,23 +135,25 @@ console.log("-----------------------------------------------");
 //         - 5–6 → C
 //         - abaixo de 5 → D
 
-// const nota = 10;
+const nota1 = 6;
 
-// switch (nota) {
-//   case nota > 9:
-//     console.log(`Aluno conceito A.`);
-//     break;
-//   case nota > 7:
-//     console.log(`Aluno conceito B.`);
-//     break;
-//   case nota > 5:
-//     console.log(`Aluno conceito C.`);
-//     break;
-//   default:
-//     console.log(`Aluno condeito D.`);
-// }
+switch (true) {
+  case nota1 > 9:
+    console.log(`Aluno conceito A.`);
+    break;
+  case nota1 > 7:
+    console.log(`Aluno conceito B.`);
+    break;
+  case nota1 > 5:
+    console.log(`Aluno conceito C.`);
+    break;
+  default:
+    console.log(`Aluno condeito D.`);
+}
 
-const nota = 5;
+console.log("");
+
+const nota = 10;
 
 switch (nota) {
   case 10:
