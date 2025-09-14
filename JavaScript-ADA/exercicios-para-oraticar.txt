@@ -1,0 +1,91 @@
+https://bruno-cabral.notion.site/Exerc-cios-para-praticar-98bec007dcf743ac97d9cbf54b7f0e96
+
+# Exercícios para praticar
+
+⚠️ Esses exercícios **não são para entregar**, apenas para praticar e estudar.
+
+1. Fique a vontade para pesquisar na internet.
+2. Caso tenha alguma dúvida ou dificuldade procure o professor.
+3. Caso recorra para IA, utilize para entender o código, não para gerar.
+
+## Exercícios de `if-else`
+
+1. **Exercício Fácil:**
+Escreva um programa em JavaScript que verifica se um número é positivo, negativo ou igual a zero. Use a estrutura `if-else` para realizar essa verificação.
+
+2. **Exercício Moderado**:
+Escreva um programa em JavaScript que verifica se um número é par ou ímpar. Use a estrutura `if-else` para realizar essa verificação.
+
+3. **Exercício Intermediário:**
+Escreva um programa em JavaScript que verifica se um número é divisível por 3 e por 5 ao mesmo tempo. Use a estrutura `if-else` para realizar essa verificação.
+
+4. **Exercício Avançado:**
+Escreva um programa em JavaScript que verifica se um ano é bissexto. Use a estrutura `if-else` para realizar essa verificação. 
+**Dica:** um ano bissexto é divisível por 4, mas não por 100, a menos que também seja divisível por 400.
+
+5. **Exercício Desafiador:**
+Escreva um programa em JavaScript que verifica se um número é um *palíndromo*. Use a estrutura `if-else` para realizar essa verificação. Um *palíndromo* é um número que permanece o mesmo quando seus dígitos são invertidos.
+**Dica:** para inverter um numero utilize: `parseInt(numero.toString().split('').reverse().join(''))`
+
+## Exercícios de `switch/case`
+
+1. **Exercício Fácil:**
+Escreva um programa em JavaScript que recebe uma cor em inglês e retorna o seu nome em português. Utilize a estrutura `switch/case` para realizar essa verificação. As cores podem ser: "red" (vermelho), "blue" (azul), "green" (verde), "yellow" (amarelo) e "black" (preto).
+
+2. **Exercício Moderado:**
+Escreva um programa em JavaScript que recebe um número de 1 a 12 e retorna o mês correspondente. Caso seja um número inválido retorna "Número inválido.” Utilize a estrutura `switch/case` para realizar essa verificação.
+
+3. **Exercício Intermediário:**
+Escreva um programa em JavaScript que recebe uma letra do alfabeto e retorna se é uma vogal ou uma consoante.  Utilize a estrutura `switch/case` para realizar essa verificação.
+
+4. **Exercício Avançado:**
+Crie um programa em JavaScript que implemente uma calculadora básica. A função `calculadora` receberá dois números como parâmetro e um terceiro parâmetro indicando a ação a ser executada. Utilize a estrutura `switch/case` para realizar a operação correta com base na ação fornecida. As ações possíveis são: "somar", "subtrair", "dividir" e "multiplicar". O resultado da operação deve ser retornado pela função.
+**Exemplo de uso:** `calculadora(5, 3, "somar")` deve retornar 8.
+
+5. **Exercício Desafiador**
+Escreva um programa em JavaScript que recebe um número de 1 a 7 e retorna o dia da semana correspondente. Utilize a estrutura `switch/case` para realizar essa verificação.
+Além disso, implemente uma verificação adicional utilizando `if-else` para retornar "Fim de semana" caso o número seja 1 ou 7 (domingo ou sábado), e "Dia útil" caso contrário.
+    
+    **Exemplo de uso:** `verificarDiaSemana(3)` deve retornar "Quarta-feira, Dia útil".
+    
+    **Dica:** Utilize os valores de 1 a 7 para representar os dias da semana, sendo 1 para domingo, 2 para segunda-feira e assim por diante.
+    
+
+## Exercícios de `while`
+
+1. **Exercício Fácil:**
+Escreva um programa em JavaScript que imprima **todos os números** de 1 a 10 utilizando um loop `while`.
+
+2. **Exercício Moderado:**
+Escreva um programa em JavaScript que calcule a soma dos números de 1 a 100 utilizando um loop `while`. Imprima o resultado no final.
+
+3. **Exercício Intermediário:**
+Escreva um programa em JavaScript que encontre e imprima todos os **números primos** de 1 a 100 utilizando um loop `while`.
+
+4. **Exercício Avançado:**
+Escreva um programa em JavaScript que calcule e i**mprima os primeiros N termos da sequência de Fibonacci,** onde N é um número fornecido pelo usuário, utilizando um loop `while`.
+
+5. **Exercício Desafiador:**
+    
+    Escreva um programa em JavaScript que peça ao usuário para adivinhar um número entre 1 e 100. O programa deve gerar um número aleatório e o usuário deve tentar adivinhar qual é esse número.
+    
+- Utilize um loop `while` para permitir que o usuário continue adivinhando até acertar o número.
+- Utilize uma estrutura `switch/case` para fornecer dicas ao usuário sobre se o número que ele digitou é maior ou menor que o número gerado aleatoriamente.
+- Utilize uma estrutura `if-else` para verificar se o número digitado pelo usuário é igual ao número gerado aleatoriamente e, em caso afirmativo, exiba uma mensagem de parabéns.
+
+**Exemplo de uso:**
+
+```
+Adivinhe o número entre 1 e 100:
+> 50
+O número é maior que 50.
+> 75
+O número é menor que 75.
+> 65
+O número é menor que 65.
+> 60
+O número é maior que 60.
+> 62
+Parabéns! Você acertou o número!
+
+```

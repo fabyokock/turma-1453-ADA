@@ -1,3 +1,5 @@
+// https://gemini.google.com/app/0806940a41d85125?hl=pt-BR
+
 console.log("-----------------------------------------------");
 console.log("                ### Exercício 1:               ");
 console.log("           O Acesso à Festa Secreta            ");

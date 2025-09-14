@@ -1,3 +1,5 @@
+// https://bruno-cabral.notion.site/Praticando-la-os-de-repeti-o-26b9e0ee3fbd80c180d8f6b90c737e00
+
 console.log("-----------------------------------------------");
 console.log("                  LAÇO COM WHILE               ");
 console.log("-----------------------------------------------");
@@ -21,15 +23,10 @@ console.log("     ### 🌀 Exercícios com `for` (laço numérico)           ");
 console.log("-----------------------------------------------------------");
 
 // 1. **Contagem simples**
-
 //     Use um `for` para imprimir os números de 1 a 10 no console.
-
 // 2. **Tabuada**
-
 //     Peça um número ao usuário (via `prompt`) e use um `for` para mostrar a tabuada desse número de 1 a 10.
-
 // 3. **Soma dos números**
-
 //     Use um `for` para somar todos os números de 1 a 100 e mostre o resultado no console.
 
 console.log("-----------------------------------------------");
@@ -64,11 +61,8 @@ console.log("     ### 🔁 Exercícios com `while` (laço condicional)      ");
 console.log("-----------------------------------------------------------");
 
 // 1. **Contagem até 10**
-
 //     Use um `while` para imprimir os números de 1 a 10 no console.
-
 // 2. **Acumulador até limite**
-
 //     Crie um `while` que some números inteiros a partir de 1 até que a soma seja maior que 50. Mostre o resultado.
 
 console.log("-----------------------------------------------");

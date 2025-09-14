@@ -1,3 +1,5 @@
+// https://bruno-cabral.notion.site/Exercicios-m-todos-de-array-63f752a22de94e7f8ac96f567a4f2639
+
 console.log("-----------------------------------------------");
 console.log("          EXERCÍCIOS MÉTODOS DE ARRAY          ");
 console.log("                ### Exercício 1:               ");
@@ -354,3 +356,85 @@ console.log("          EXERCÍCIOS MÉTODOS DE ARRAY          ");
 console.log("                ### Exercício 12:              ");
 console.log("                    reverse()                  ");
 console.log("-----------------------------------------------");
+
+// 1. Utilize o método "reverse" para inverter a ordem dos elementos do array.
+// 2. Verifique se a lista ficou com os elementos na ordem inversa: 5, 4, 3, 2, 1.
+
+const numeros = [1, 2, 3, 4, 5];
+const reverso = numeros.reverse();
+console.log(reverso);
+
+console.log("-----------------------------------------------");
+console.log("          EXERCÍCIOS MÉTODOS DE ARRAY          ");
+console.log("                ### Exercício 13:              ");
+console.log("                      some()                   ");
+console.log("-----------------------------------------------");
+
+// 1. Utilize o método "some" para verificar se pelo menos um dos empregados tem salário maior ou igual a R$ 1.500,00.
+// 2. Utilize o método "some" novamente para verificar se pelo menos um dos empregados tem salário menor ou igual a R$ 1.000,00.
+// 3. Verifique se você conseguiu utilizar o método "some" corretamente.
+
+const empregados = [
+  { nome: "João", salario: 1200 },
+  { nome: "Maria", salario: 1500 },
+  { nome: "Pedro", salario: 1800 },
+  { nome: "Ana", salario: 1400 },
+  { nome: "Carlos", salario: 2000 },
+];
+
+const salarioMaior = empregados.some((empregado) => empregado.salario >= 1500);
+console.log(
+  `Há pelo menos um empregado com salário maior ou igual a R$ 1.500,00?`,
+  salarioMaior
+);
+
+const salarioMenor = empregados.some((empregado) => {
+  return empregado.salario <= 1000;
+});
+console.log(
+  `Há pelo menos um empregado com salário menor ou igual a R$ 1.000,00?`,
+  salarioMenor
+);
+
+console.log("-----------------------------------------------");
+console.log("          EXERCÍCIOS MÉTODOS DE ARRAY          ");
+console.log("                ### Exercício 14:              ");
+console.log("                      sort()                   ");
+console.log("-----------------------------------------------");
+
+// 1. Utilize o método "sort" para ordenar a lista de atletas em ordem crescente de peso.
+// 2. Utilize o método "sort" novamente para ordenar a lista de atletas em ordem decrescente de altura.
+// 3. Utilize o método "sort" mais uma vez para ordenar a lista de atletas em ordem alfabética de nome.
+// 4. Verifique se você conseguiu utilizar o método "sort" corretamente.
+
+const atletas = [
+  { nome: "João", altura: 1.75, peso: 80 },
+  { nome: "Maria", altura: 1.68, peso: 60 },
+  { nome: "Pedro", altura: 1.8, peso: 70 },
+  { nome: "Ana", altura: 1.65, peso: 55 },
+  { nome: "Carlos", altura: 1.9, peso: 100 },
+];
+
+const ordemPeso = atletas.sort((a, b) => a.peso - b.peso);
+console.log(`Atletas ordenados por peso (crescente):`, ordemPeso);
+
+const ordemAltura = atletas.sort(function (a, b) {
+  return b.altura - a.altura;
+});
+console.log(`Atletas ordenados por altura (decrescente):`, ordemAltura);
+
+const ordemAlfabetica = atletas.sort((a, b) => {
+  return a.nome.localeCompare(b.nome);
+});
+console.log(`Atletas em ordem alfabética:`, ordemAlfabetica);
+
+// Observação:
+// ⚠️ Outra observação importante: você está chamando .sort() várias vezes no mesmo array (atletas).
+// Como o .sort() modifica o array original, o resultado pode ficar confuso.
+// 👉 Para evitar isso, é melhor fazer uma cópia antes de ordenar:
+
+// const ordemPeso = [...atletas].sort((a, b) => a.peso - b.peso);
+// const ordemAltura = [...atletas].sort((a, b) => b.altura - a.altura);
+// const ordemAlfabetica = [...atletas].sort((a, b) =>
+//   a.nome.localeCompare(b.nome)
+// );

@@ -1,3 +1,5 @@
+// https://bruno-cabral.notion.site/Exerc-cios-pr-ticos-Aula-3-2699e0ee3fbd80b4851bc65ee1311b99
+
 console.log("-----------------------------------------------");
 console.log("                ### Exercício 1:               ");
 console.log("                 Cálculo de IMC                ");
