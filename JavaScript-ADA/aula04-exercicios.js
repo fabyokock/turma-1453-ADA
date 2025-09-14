@@ -192,3 +192,165 @@ console.log(`Os alunos que têm idade menor que 20 anos são:`, menor20Anos);
 
 const comecaComJ = alunos.filter((aluno) => aluno.nome[0] === "J");
 console.log(`Os alunos cujo nome começa com a letra "J" são:`, comecaComJ);
+
+console.log("-----------------------------------------------");
+console.log("          EXERCÍCIOS MÉTODOS DE ARRAY          ");
+console.log("                ### Exercício 8:               ");
+console.log("                    find()                     ");
+console.log("-----------------------------------------------");
+
+// 1. Utilize o método "find" para encontrar o primeiro lugar que tenha capacidade máxima de pelo menos 10 pessoas.
+// 2. Utilize o método "find" novamente para encontrar o primeiro lugar que tenha capacidade máxima de pelo menos 25 pessoas.
+// 3. Utilize o método "find" mais uma vez para encontrar o primeiro lugar que tenha capacidade máxima de pelo menos 40 pessoas.
+// 4. Verifique se você conseguiu utilizar o método "find" corretamente.
+
+const lugares = [
+  { nome: "Sala de Reuniões", capacidade: 8 },
+  { nome: "Auditório", capacidade: 50 },
+  { nome: "Sala de Treinamento", capacidade: 20 },
+  { nome: "Sala de Conferências", capacidade: 30 },
+  { nome: "Sala de Estudos", capacidade: 12 },
+];
+
+const capacidadeMaiorIgual10 = lugares.find(
+  (lugares) => lugares.capacidade >= 10
+);
+console.log(
+  `O primeiro lugar que tem capacidade máxima de pelo menos 10 pessoas é:`,
+  capacidadeMaiorIgual10
+);
+
+const capacidadeMaiorIgual25 = lugares.find(function (lugares) {
+  return lugares.capacidade >= 25;
+});
+console.log(
+  `O primeiro lugar que tem capacidade máxima de pelo menos 25 pessoas é:`,
+  capacidadeMaiorIgual25
+);
+
+const capacidadeMaiorIgual40 = lugares.find((lugares) => {
+  return lugares.capacidade >= 40;
+});
+console.log(
+  `O primeiro lugar que tem capacidade máxima de pelo menos 25 pessoas é:`,
+  capacidadeMaiorIgual40
+);
+
+console.log("-----------------------------------------------");
+console.log("          EXERCÍCIOS MÉTODOS DE ARRAY          ");
+console.log("                ### Exercício 9:               ");
+console.log("                   forEach()                   ");
+console.log("-----------------------------------------------");
+
+// 1. Utilize o método "forEach" para percorrer a lista de pizzas e imprimir no console o nome do sabor da pizza e seu valor.
+// 2. Verifique se você conseguiu utilizar o método "forEach" corretamente.
+
+const pizzas = [
+  { sabor: "Mussarela", valor: 20 },
+  { sabor: "Calabresa", valor: 25 },
+  { sabor: "Marguerita", valor: 28 },
+  { sabor: "Frango com Catupiry", valor: 32 },
+  { sabor: "Portuguesa", valor: 30 },
+];
+
+pizzas.forEach((tipo) => {
+  console.log(`A pizza ${tipo.sabor} custa ${tipo.valor} reais.`);
+});
+
+console.log("-----------------------------------------------");
+console.log("          EXERCÍCIOS MÉTODOS DE ARRAY          ");
+console.log("                ### Exercício 10:              ");
+console.log("                      map()                    ");
+console.log("-----------------------------------------------");
+
+// 1. Utilize o método "map" para criar um novo array de objetos que contenha somente o nome e o IMC (índice de massa corporal) de cada pessoa, sendo que o IMC é calculado pela fórmula `peso / altura²`.
+// 2. Verifique se você conseguiu utilizar o método "map" corretamente.
+
+const pessoasMap = [
+  { nome: "João", altura: 1.75, peso: 80 },
+  { nome: "Maria", altura: 1.68, peso: 60 },
+  { nome: "Pedro", altura: 1.8, peso: 70 },
+  { nome: "Ana", altura: 1.65, peso: 55 },
+  { nome: "Carlos", altura: 1.9, peso: 100 },
+];
+
+const pessoaImc = pessoasMap.map((pessoa) => {
+  return {
+    nome: pessoa.nome,
+    imc: (pessoa.peso / pessoa.altura ** 2).toFixed(2),
+  };
+});
+
+console.log(pessoaImc);
+
+// pessoaImc.set(pessoasMap[0].nome, {
+//   nome: pessoasMap[0].nome,
+//   imc: (pessoasMap[0].peso / pessoasMap[0].altura ** 2).toFixed(2),
+// });
+// pessoaImc.set(pessoasMap[1].nome, {
+//   nome: pessoasMap[1].nome,
+//   imc: (pessoasMap[1].peso / pessoasMap[1].altura ** 2).toFixed(2),
+// });
+// pessoaImc.set(pessoasMap[2].nome, {
+//   nome: pessoasMap[2].nome,
+//   imc: (pessoasMap[2].peso / pessoasMap[2].altura ** 2).toFixed(2),
+// });
+// pessoaImc.set(pessoasMap[3].nome, {
+//   nome: pessoasMap[3].nome,
+//   imc: (pessoasMap[3].peso / pessoasMap[3].altura ** 2).toFixed(2),
+// });
+// pessoaImc.set(pessoasMap[4].nome, {
+//   nome: pessoasMap[4].nome,
+//   imc: (pessoasMap[4].peso / pessoasMap[4].altura ** 2).toFixed(2),
+// });
+// console.log(pessoaImc);
+
+console.log("-----------------------------------------------");
+console.log("          EXERCÍCIOS MÉTODOS DE ARRAY          ");
+console.log("                ### Exercício 11:              ");
+console.log("                     reduce()                  ");
+console.log("-----------------------------------------------");
+
+// 1. Utilize o método "map" para criar um novo objeto com o nome e a média de cada aluno.
+// 2. A média deve ser calculada utilizando o método "reduce" para somar as notas e dividi-las pelo número de notas.
+// 3. Verifique se você conseguiu utilizar o método "reduce" corretamente.
+
+const alunosNotas = [
+  { nome: "Ana", notas: [7, 8, 9] },
+  { nome: "Pedro", notas: [5, 6, 7] },
+  { nome: "Maria", notas: [9, 8, 10] },
+  { nome: "João", notas: [6, 7, 8] },
+  { nome: "Lucas", notas: [8, 9, 7] },
+  { nome: "Julia", notas: [10, 8, 9] },
+];
+
+const mediaAlunos = alunosNotas.map((aluno) => {
+  const soma = aluno.notas.reduce(
+    (acumulador, valorAtual) => acumulador + valorAtual,
+    0
+  );
+  const media = soma / aluno.notas.length;
+
+  return {
+    nome: aluno.nome,
+    media: media.toFixed(2),
+  };
+});
+
+console.log(mediaAlunos);
+
+// Também funciona:
+const mediaAlunos2 = alunosNotas.map((aluno) => ({
+  nome: aluno.nome,
+  media:
+    aluno.notas.reduce((acumulado, nota) => acumulado + nota, 0) /
+    aluno.notas.length,
+}));
+
+console.log(mediaAlunos2);
+
+console.log("-----------------------------------------------");
+console.log("          EXERCÍCIOS MÉTODOS DE ARRAY          ");
+console.log("                ### Exercício 12:              ");
+console.log("                    reverse()                  ");
+console.log("-----------------------------------------------");
