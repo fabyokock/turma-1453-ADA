@@ -2,6 +2,7 @@
 
 console.log("-----------------------------------------------");
 console.log("           Exercícios de if-else               ");
+console.log("            POSITIVO ou NEGATIVO               ");
 console.log("               Exercício Fácil                 ");
 console.log("-----------------------------------------------");
 
@@ -18,6 +19,7 @@ if (numero > 0) {
 
 console.log("-----------------------------------------------");
 console.log("           Exercícios de if-else               ");
+console.log("               PAR ou ÍMPAR                    ");
 console.log("            Exercício Moderado                 ");
 console.log("-----------------------------------------------");
 
@@ -33,12 +35,29 @@ if (parOuImpar % 2 === 0) {
 
 console.log(``);
 
+console.log("-----------------------------------------------");
+console.log("           Exercícios de if-else               ");
+console.log("            DIVISÍVEL POR 3 e 5                ");
+console.log("          Exercício Intermediário              ");
+console.log("-----------------------------------------------");
+
+// Escreva um programa em JavaScript que verifica se um número é divisível por 3 e por 5 ao mesmo tempo. Use a estrutura if-else para realizar essa verificação.
+
+const n3ou5 = 9;
+
+if (n3ou5 % 3 === 0 && n3ou5 % 5 === 0) {
+  console.log("O número informado é divisível por 3 e 5 ao mesmo tempo.");
+} else {
+  console.log("O número informado não é divisível por 3 e 5 ao mesmo tempo.");
+}
+
 console.log(`***********************************************`);
 console.log(`***********************************************`);
 console.log(`***********************************************`);
 
 console.log("-----------------------------------------------");
 console.log("           Exercícios de switch/case           ");
+console.log("             INGLÊS para PORTUGUÊS             ");
 console.log("                Exercício Fácil                ");
 console.log("-----------------------------------------------");
 
@@ -71,6 +90,7 @@ switch (cor) {
 
 console.log("-----------------------------------------------");
 console.log("           Exercícios de switch/case           ");
+console.log("               MÊS CORREPONDENTE               ");
 console.log("               Exercício Moderado              ");
 console.log("-----------------------------------------------");
 
@@ -119,6 +139,71 @@ switch (numero1A12) {
     console.log("Numero inválido! Informe outro número.");
 }
 
+console.log("-----------------------------------------------");
+console.log("           Exercícios de switch/case           ");
+console.log("              VOGAL ou CONSOANTE               ");
+console.log("            Exercício intermediário            ");
+console.log("-----------------------------------------------");
+
+// Escreva um programa em JavaScript que recebe uma letra do alfabeto e retorna se é uma vogal ou uma consoante.  Utilize a estrutura switch/case para realizar essa verificação.
+
+const vogalOuConsoante = "a";
+
+switch (vogalOuConsoante) {
+  case "a":
+  case "e":
+  case "i":
+  case "o":
+  case "u":
+    console.log(`A letra informada é uma vogal.`);
+    break;
+  case "b":
+  case "c":
+  case "d":
+  case "f":
+  case "g":
+  case "h":
+  case "j":
+  case "k":
+  case "l":
+  case "m":
+  case "n":
+  case "p":
+  case "q":
+  case "r":
+  case "s":
+  case "t":
+  case "v":
+  case "w":
+  case "x":
+  case "y":
+  case "z":
+    console.log(`A letra informada é uma consoante.`);
+    break;
+  default:
+    console.log(`Caractere inválido. Digite uma letra minúscula.`);
+}
+
+const letra = "a";
+
+switch (letra) {
+  case "a":
+  case "e":
+  case "i":
+  case "o":
+  case "u":
+    console.log("A letra informada é uma vogal.");
+    break;
+
+  default:
+    // verifica se é realmente uma letra do alfabeto
+    if (letra >= "a" && letra <= "z") {
+      console.log("A letra informada é uma consoante.");
+    } else {
+      console.log("Caractere inválido. Digite uma letra minúscula.");
+    }
+}
+
 console.log(``);
 
 console.log(`***********************************************`);
@@ -127,6 +212,7 @@ console.log(`***********************************************`);
 
 console.log("-----------------------------------------------");
 console.log("              Exercícios de while              ");
+console.log("               IMPRIMIR de 1 a 10              ");
 console.log("                Exercício Fácil                ");
 console.log("-----------------------------------------------");
 
@@ -140,6 +226,7 @@ while (n <= 10) {
 
 console.log("-----------------------------------------------");
 console.log("              Exercícios de while              ");
+console.log("                SOMAR de 1 a 100                ");
 console.log("               Exercício Moderado              ");
 console.log("-----------------------------------------------");
 
